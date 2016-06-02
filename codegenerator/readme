@@ -1,7 +1,29 @@
 Code Generator works exclusively on a MySql database.
 
 Currently it only generates .java file for each table in the database.
-It produces all the code in-line but should rather later use a template 
+
+The idea is to automatically generate all related resources such as classes and jsp's etc...
+
+Its basic configuration is in the inline code :
+
+    // JDBC driver name and database URL
+    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    static final String DB_URL = "jdbc:mysql://localhost/business";
+    static final String DB = "business";
+    
+    //  Database credentials
+    static final String USER = "root";
+    static final String PASS = "root";
+    
+    // Generation parameters
+    static final String NAMESPACE = "com.business.server.domain.dto";
+    static final String PREFIX = "";
+    static final String POSTFIX = "DTO";
+    
+    // Directory where resources will be created
+    static final String DIRECTORY = "C:\\project\\dto\\";
+
+It produces all the code in-line but should rather later use a template
 in the format of a text file whereupon character replacements 
 can be done for flexibility and easy human readability.
 
