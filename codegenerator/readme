@@ -1,0 +1,8 @@
+Code Generator works exclusively on a MySql database.
+
+Currently it only generates .java file for each table in the database.
+It produces all the code in-line but should rather later use a template 
+in the format of a text file whereupon character replacements 
+can be done for flexibility and easy human readability.
+
+This wull be phase 2 once I've gotten the basics complete.
