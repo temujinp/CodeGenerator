@@ -83,7 +83,7 @@ public class DomainDTOGenerator {
                 cls.append(" implements Serializable {\n\n");
                 
                 //STEP 7: Get the database table column details 
-                String sqlcols = "SHOW COLUMNS FROM `" + table + "` FROM business";
+                String sqlcols = "SHOW COLUMNS FROM `" + table + "` FROM " + DB;
                 stmt2 = conn.createStatement();
                 ResultSet rscols = stmt2.executeQuery(sqlcols);
 
